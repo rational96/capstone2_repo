@@ -11,8 +11,8 @@ phases:
     commands:
     - echo build Docker image on `date`
     - cd src
-    - docker build -t Capstone2Group1Image:latest .
-    - docker tag Capstone2Group1Image:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/capstone2/group1afternoon:latest
+    - docker build -t capstone2/group1afternoon .
+    - docker tag docker tag capstone2/group1afternoon:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/capstone2/group1afternoon:latest
 post_build:
   commands:
     - echo build Docker image complete `date`
